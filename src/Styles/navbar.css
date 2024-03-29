@@ -1,0 +1,89 @@
+.container {
+    background-color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* border: 1px solid #fcc404;   yellow */
+}
+
+/* -------------------------------------------------  Navbar ------------------------------------- */
+
+.navbar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .navbar a{
+    position: relative;
+    margin: 40px 30px;
+    color: #27292a;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.container .navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #ffc404;  
+    transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+.container .navbar a:hover::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+.navbar img{
+    width: 200px;
+    height:67px;
+    margin: 0px 20px;
+}
+
+h2{
+    text-align: center;
+    color: #27292a;
+}
+
+/* --------------------------------------   Footer ------------------------------------------------ */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure page takes up at least the full height of the viewport */
+  }
+  
+  .main-container {
+    flex-grow: 1; /* Allow the main content to grow to fill available space */
+  }
+
+.footer{
+    background-color: #27292a;
+    color: white;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer .flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .flex-items{
+    flex-wrap: wrap;
+    padding: 0px 50px;
+    margin: 0px 50px 10px 50px;
+}
+
+.footer .flex-items p, .footer .flex-items address{
+    font-size: 15px;
+    color: white;
+}
+
+.footer .flex-items h4{
+    font-size: 25px;
+}

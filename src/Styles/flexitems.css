@@ -1,0 +1,21 @@
+.item-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items{
+    width: 40%;
+    padding: 15px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    text-align: left;
+    border: 1px solid #27292a;
+    margin: 20px 50px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+}
+
+.items:hover{
+    transform: translateY(-3px);
+    transition: 0.5s;
+}
